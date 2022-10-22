@@ -1,9 +1,0 @@
-# rename files in path
-import os
-i = 1
-path = 'D:/signs/classes/'
-for dirs in os.listdir(path):
-    path1 = os.path.join(path, dirs)
-    for file in os.listdir(path1):
-        os.rename(os.path.join(path1, file,),os.path.join(path1, f'{i}.jpg'))
-        i+=1
