@@ -14,49 +14,22 @@ I took a larger size from the width and height of the sign and resized it to the
 
     dataset_from_photos_to_class_folders.ipynb
 
-2. 
+2. The dataset does not contain data indicating the name of road signs. 
+Therefore, I created a csv file with this information, renaming the folder names along the way 
+to a convenient list of integers. (in order not to deal with the routine of copying and pasting data, you can use the attached csv)
 
-create_classesCSV_rename_folders.ipynb
+    create_classesCSV_rename_folders.ipynb
+    labels.csv
 
-3.full-gt.csv
+3. Some classes have very few images for model training, I removed folders with less than 100 images
 
-4. dict_sign_class.ipynb
+    remove_small_data.ipynb
 
-
-5. remove_small_data.ipynb
-
-
-6. model_create_train.ipynb
-
-    изображения были отмечены на фотографиях, их координаты приложены в csv файле. 
-    Так как я решил собирать изображения квадратного формата, я выбирал больший параметр из ширины и высоты размеченных знаков, 
-    приводил их к матрице 32*32 и сохранял в npz для каждого класса
-
-find reshape save signs in folders
-rename files
-make csv with numbers and classes
-rename folders
-make small np files in each folder
-join np files in one
- README.md
-Create README.md
-11 days ago
-create_classesCSV_rename_folders.ipynb
-Add files via upload
-2 days ago
-dataset_from_photos_to_class_folders.ipynb
-Add files via upload
-2 days ago
-dict_sign_class.ipynb
-Add files via upload
-2 days ago
-model_create_train.ipynb
-Add files via upload
-1 minute ago
-remove_small_data.ipynb
-Add files via upload
-2 days ago
-rename 
+4.  The most interesting part is where you can enjoy the results. Preparing data for training and validation. Sequential model training. Visualization of results. Saving the Trained Model
+    
+    model_create_train.ipynb
 
 
 
+"Time you enjoy wasting was not wasted."
+  John Lennon
